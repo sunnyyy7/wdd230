@@ -1,0 +1,30 @@
+caption {
+    caption-side: bottom;
+}
+
+table {
+    width: 80%;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+td{
+    padding: 0.5rem;
+    border: 1px soild #999
+}
+
+thead tr:nth-child(2) th {
+    background-color: #444;
+}
+
+thead tr:nth-child(2) th:first-child {
+    background-color: #999;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #ddd;
+}

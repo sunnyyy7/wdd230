@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --dark-gray: #403d39;
+    --light-gray: #ccc5b9;
+    --light-text: #fffcf2;
+    --orange-theme: #c34e21;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+#content {
+    max-width: 640px;
+    background-color: var(--light-gray);
+    margin: 0 auto;
+    padding: 0 16px;
+    color: #252422;
+}
+
+header {
+    background-color: var(--dark-gray);
+    display: grid;
+    place-items: center;
+    grid-template: auto / 200px auto;
+    color: var(--light-text);
+    border-radius: 20px 20px 0 0;
+    margin-top: 16px;
+}
+
+header img {
+    margin: 20px;
+    border-radius: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: block;
+    background-color: var(--light-text);
+    border-radius: 0 0 0 10px;
+    padding: 0.5rem;
+}
+
+#menu::before {
+    content: "≡";
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.show #menu::before {
+    content: "x";
+}
+
+nav {
+    background-color: var(--light-text);
+}
+
+nav ul {
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style-type: none;
+    margin: 0;
+    padding: 6px 0;
+}
+
+nav li {
+    display: block;
+    padding: 8px 16px;
+    background-color: var(--light-text);
+    border-radius: 8px;
+    text-align: center;
+}
+
+nav.show ul {
+    display: flex;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--orange-theme);
+}
+
+nav a:hover {
+    color: var(--dark-gray);
+}
+
+main {
+    display: grid;
+    grid-template: auto auto auto / auto;
+}
+
+main>h2 {
+    text-align: center;
+}
+
+.card {
+    background-color: var(--light-text);
+    margin: 0 0 16px 0;
+    padding: 0 16px;
+    border-radius: 10px;
+}
+
+.card>h3 {
+    background-color: var(--orange-theme);
+    color: var(--light-text);
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.card p {
+    text-align: center;
+}
+
+.card li {
+    line-height: 2rem;
+}
+
+section iframe {
+    border: 0;
+    width: 100%;
+}
+
+footer {
+    background-color: var(--dark-gray);
+    color: var(--light-text);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+}

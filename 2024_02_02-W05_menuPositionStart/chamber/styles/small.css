@@ -1,0 +1,48 @@
+@media screen and (max-width: 600px) {
+    header {
+        justify-content: space-between;
+        align-content: space-between;
+        padding: 0.3rem;
+    }
+
+    header img {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+
+    header #SocialLinks {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+        text-align: center;
+    }
+
+    header h1 {
+        grid-column: 1 / 3;
+        font-size: 1.5rem;
+    }
+
+    header h1 br {
+        display: none;
+    }
+
+    #MenuButton {
+        font-size: 2rem;
+    }
+
+    #MenuButton::before {
+        content: "☰";
+    }
+
+    .menuOpen #MenuButton::before {
+        content: "x";
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav.menuOpen ul {
+        display: flex;
+        flex-direction: column;
+    }
+}

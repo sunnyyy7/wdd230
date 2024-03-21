@@ -1,0 +1,17 @@
+div {
+    margin: 40px;
+    padding: 5px;
+    border: 1px soild black;
+}
+
+#Top {
+    background-color: #bfb;
+}
+
+#Middle{
+    background-color: #ffb
+}
+
+#Bottom {
+    background-color: #bbf
+}

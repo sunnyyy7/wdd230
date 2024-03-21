@@ -1,0 +1,36 @@
+body {}
+
+
+
+menu{
+    display: black;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: #eee;
+    color: #000;
+
+}
+
+#menu :: before {
+    content: "a"
+
+}
+
+nav{
+    background-color: tomato;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+
+.show li {
+    display: '=';
+
+    
+
+}
+}
