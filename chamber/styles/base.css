@@ -1,9 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Ubuntu&display=swap");
 
 :root{
-    --darker-green: #EDB518;
-    --dark-green: #4472CA;
-    --light-green: #CFDEE7;
+    --dark-blue: #4472CA;
+    --light-blue: #CFDEE7;
     --cream: #5E7CE2;
     --tan: #92B4F4; 
     --brown: #D0CFCF;
@@ -33,7 +32,7 @@ a:visited{
 }
 
 header, footer{
-    background-color: var(--light-green);
+    background-color: var(--light-blue);
     border: 1px black solid;        
 }
 
@@ -81,7 +80,7 @@ header{
 
 hr{
     height: 2px;
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
     border: none;        
 }
 
@@ -110,7 +109,7 @@ nav ul li a{
     color: black;
     text-align: center;
     padding: 1rem;
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
     font-size: 1.25rem;
 }
 
@@ -126,7 +125,7 @@ nav ul li a:hover{
 /** Hamburger menu stuff **/
 
 #hamburger-menu{
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
     border: 0;    
     margin: 0;
     position: absolute;
@@ -160,7 +159,7 @@ nav ul.menu-active{
 }
 
 #meet-greet.active{
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
     font-weight: bold;
     text-align: center;
     border-bottom: 1px solid black;
@@ -334,6 +333,28 @@ nav ul.menu-active{
 
 /** Discover page **/
 
+.main-spotlight2{
+    grid-area: x;
+}
+
+.main-spotlight2 div{    
+    background-color: var(--tan);
+}
+
+.main-spotlight2 img{
+    border: 2px black solid;
+    max-width: 100%;
+}
+
+.main-spotlight2 h4, .main-spotlight h1{
+    text-align: center;
+}
+
+.main-spotlight2 p{
+    text-align: center;
+}
+
+
 .discover-main section{
     border: 2px black solid;
     margin: 1rem;    
@@ -436,7 +457,7 @@ nav ul.menu-active{
     padding: 1rem;
     margin: .5rem;
     border-radius: 5px;
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
     border: 1px black solid;
 }
 
@@ -456,7 +477,7 @@ nav ul.menu-active{
     text-align: center;    
     border: 2px solid grey;    
     width: 300px;
-    background-color: var(--light-green);
+    background-color: var(--light-blue);
     padding: 1rem;
     margin: .5rem;
 }
@@ -490,11 +511,11 @@ nav ul.menu-active{
 }
 
 .directory-list section:nth-child(odd) {
-    background-color: var(--light-green);
+    background-color: var(--light-blue);
 }
 
 .directory-list section:nth-child(even) {
-    background-color: var(--dark-green);
+    background-color: var(--dark-blue);
 }
 
 /* Join page */
@@ -537,3 +558,11 @@ nav ul.menu-active{
 .left-justify{
     text-align: left;
 }
+
+/* disvocery page */
+.sidebar {
+    background-color: var(--tan);
+    padding: 10px;
+    border: 1px solid gray;
+    width: 200px;
+} 
