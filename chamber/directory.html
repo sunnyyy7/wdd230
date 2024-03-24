@@ -1,77 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chamber of Commerce Testing Site for CSE 270 - BYU Idaho 2024" />
-    <title>Teton Idaho Chamber of Commerce - Home</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-    <link rel="stylesheet" href="./styles/base.css" />
-    <link rel="stylesheet" href="./styles/medium.css" />
-    <link rel="stylesheet" href="./styles/large.css" />    
-    <script src="./config/config.js" defer></script>
-    <script src="./scripts/header-footer.js" defer></script>    
-    <script src="./scripts/directory.js" defer></script>    
-  </head>
-  <body>
-    <div id="content">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chamber of Commerce Demonstration Site for WDD 230 - Winter 2023 - BYU-Idaho" />
+  <title>Toronto CoC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="stylesheet" href="./styles/base.css" />
+  <link rel="stylesheet" href="./styles/medium.css" />
+  <link rel="stylesheet" href="./styles/large.css" />
+  <script src="./config/config.js" defer></script>
+  <script src="./scripts/header-footer.js" defer></script>
+  <script src="./scripts/directory.js" defer></script>
+</head>
+
+<body>
+  <div id="content">
     <header>
-      <div class="header-top">        
-          <div class="header-logo">
-            <a href="index.html"><img src="./images/teton-logo-150.webp" alt="Teton Chamber of Commerce Logo"></a>            
-          </div>          
-          <div class="header-title">
-            <h1>Teton Idaho</h1>
-            <h2>Chamber of Commerce</h2>
-          </div>
-          <div class="header-icons">
-            <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-40.png" alt="instagram logo"></a>
-            <a href="https://www.pinterest.com" target="_blank"><img src="./images/pinterest-40.png" alt="facebook logo"></a>
-          </div>
+      <div class="header-top">
+        <div class="header-logo">
+          <a href="index.html"><img src="./images/toronto-logo.jpg" /></a>
+        </div>
+        <div class="header-title">
+          <h1>Toronto</h1>
+          <h2>Chamber of Commerce</h2>
+        </div>
+        <div class="header-icons">
+          <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook-40.png"
+            alt="facebook logo"></a>
+        <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-40.png"
+            alt="instagram logo"></a>    
+        </div>
       </div>
       <nav>
         <button id="hamburger-menu">
-          <span id="hamburger-x"><img src="./images/hamburger-close.png" alt="hamburger menu image"></span>
-          <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="hamburger menu image"></span>
+          <span id="hamburger-x"><img src="./images/hamburger-close.png"></span>
+          <span id="hamburger-equiv"><img src="./images/hamburger.png"></span>
         </button>
         <ul>
           <li><a href="index.html">Home</a></li>
+          <li><a href="discovery.html">Discovery</a></li>
+          <li><a href="directory.html"class="active">Directory</a></li>
           <li><a href="join.html">Join</a></li>
-          <li><a href="directory.html" class="active">Directory</a></li>
-          <li><a href="admin.html">Admin</a></li>
         </ul>
       </nav>
-      <div class="header-today"><p></p></div>
+      <div class="header-today">
+        <p></p>
+      </div>
     </header>
     <main class="directory-main">
-    <div id='directory-selector'>
-      <button id="directory-grid" class="active">GRID</button>
-      <button id="directory-list">LIST</button></div>
-    <div id='directory-data' class='directory-cards'>
-    </div>
+      <h2>Toronto Chamber of Commerce Members</h2>
+      <div id='directory-selector'>
+        <button id="directory-list"><img src="./images/list.png"></button>
+        <button id="directory-grid" class="active"><img src="./images/grid.png"></button>
+        
+      </div>
+      <div id="directory-data" class="directory-cards">
+        <section>
+          <img src="./images/royal-ontario-museum.jpg">
+          <p>Royal Ontario Museum</p>
+          <p>100 Queens Park, </p>
+          <p>Toronto, ON M5S 2C6, Canada</p>
+          <p><a href="https://www.rom.on.ca/">Website</a></p>
+        </section>
+        <section>
+          <img src="./images/CN-Tower.jpg">
+          <p>CN Tower</p>
+          <p>290 Bremner Blvd, Toronto, </p>
+          <p>ON M5V 3L9, Canada</p>
+          <p><a href="https://www.cntower.ca/en-ca/home.html">Website</a></p>
+        </section>
+        <section>
+          <img src="./images/pacific-mall-toronto.jpg">
+          <p>Pacific Mall</p>
+          <p>4300 Steeles Ave E, </p>
+          <p>Markham, ON L3R 0Y5, Canada</p>
+          <p><a href="https://www.pacificmalltoronto.ca/">Website</a></p>
+        </section>
+        <section class="gold-member">
+          <img src="./images/art-gallery-of-ontario.jpg">
+          <p>Art Gallery of Ontario</p>
+          <p>317 Dundas St W, </p>
+          <p>Toronto, ON M5T 1G4, Canada</p>
+          <p><a href="https://ago.ca/">Website</a></p>
+        </section>
+        <section>
+          <img src="./images/Lorica-Cybersecurity.jpg">
+          <p>Lorica Cybersecurity</p>
+          <p>101 College St #155, </p>
+          <p>Toronto, ON M5G 1L7, Canada</p>
+          <p><a href="http://www.loricasys.com/">Website</a></p>
+        </section>
+        <section>
+          <img src="./images/Royal-Bank.jpg">
+          <p>Royal Bank</p>
+          <p>330 Front St W,  </p>
+          <p>Toronto, ON M5V 3B7, Canada</p>
+          <p><a href="https://www.rbcroyalbank.com/ways-to-bank/online-banking/index.html">Website</a></p>
+        </section>
+        <section>
+          <img src="./images/Centreville-Amusement-Park.jpg">
+          <p>Centreville Amusement Park</p>
+          <p>9 Queens Quay W, </p>
+          <p>Toronto, ON M5J 2H3, Canada</p>
+          <p><a href="http://www.centreisland.ca/">Website</a></p>
+        </section>
+        <section>
+          <img src="./images/scotiabank-theatre.jpg">
+          <p>Scotiabank Theatre Toronto</p>
+          <p>259 Richmond St W, </p>
+          <p>Toronto, ON M5V 3M6, Canada</p>
+          <p><a href="https://www.cineplex.com/Theatre/scotiabank-theatre-toronto">Website</a></p>
+        </section>
+        <section class="gold-member">
+          <img src="./images/MEC-Toronto.png">
+          <p>MEC Toronto</p>
+          <p>300 Queen St W, Toronto, </p>
+          <p>ON M5V 2A2, Canada</p>
+          <p><a href="https://www.mec.ca/en/stores/toronto?utm_medium=organic&utm_source=google&utm_campaign=my-business-listings&utm_content=toronto">Website</a></p>
+        </section>
+      </div>
     </main>
     <footer>
       <div class="footer-content">
         <div class="footer-logo">
-          <img src="./images/teton-logo-150.webp" />
+          <img src="./images/toronto-logo.jpg" alt="Teton Idaho Chamber of Commerce Logo">
         </div>
         <div class="footer-contact">
-          <h3>Teton Idaho Chamber of Commerce</h3>
-          <p>123 Main Street<br />Teton, ID 83451</p>
+          <h3>Toronto Chamber of Commerce</h3>
+          <p>11 Queens Ave<br>Toronto, Canada</p>
           <p><a href="mailto:notavalidaddress@nowhere.email">info@tetonchamber.org</a></p>
-          <p>208-458-4444</p>
+          <p>208-496-1234</p>
+          <div class="footer-today">
+            <p></p>
+            <p>(None of the content on this website is accurate and is for demo purposes only)</p>  
+          </div>
         </div>
         <div class="footer-map">
-          <p><img src="./images/google-maps.png"></p>
-          <a href="https://goo.gl/maps/b17zTF1NkiE4FevSA" target="_blank">Location Map</a>
+          <p><a href="https://maps.app.goo.gl/C6Pvt4qb5tYGbEti9" target="_blank"><img src="./images/google-maps.png"></a></p>
         </div>
-      </div>
-      <hr />
-      <div class="footer-base">
-        <p>&copy; <span id="currentyear"></span> | Quinn R. Briggs | Rexburg, ID | Last Updated: <span id="lastmodified"></span></p>
       </div>
     </footer>
   </div>
-  </body>
+</body>
+
 </html>

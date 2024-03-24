@@ -1,6 +1,6 @@
-// This sets today's date in the header
+// Sets of today's date in the footer
 const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format( new Date() );
-document.querySelector(".header-today p").textContent = fulldate;
+document.querySelector(".footer-today p").textContent = fulldate;
 
 // Toggle the menu open or closed
 function toggleMenu(){

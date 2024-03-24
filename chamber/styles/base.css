@@ -18,7 +18,7 @@ body {
 }
 
 #content{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -43,7 +43,7 @@ header{
 
 .header-top{
     display: grid;    
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     align-items: center;
     justify-items: center;
     text-align: center;
@@ -51,12 +51,6 @@ header{
 
 .header-icons{    
     text-align: center;
-}
-
-.header-today{
-    text-align: center;
-    background-color: var(--dark-green);
-    padding: .25rem;
 }
 
 /* Footer */
@@ -75,12 +69,18 @@ header{
     text-align: center;
 }
 
+.footer-today{
+    text-align: center;
+    /* background-color: var(--dark-green); */
+    padding: .25rem;
+}
+
 .footer-map{
     text-align: center;    
 }
 
 hr{
-    height: 3px;
+    height: 2px;
     background-color: var(--dark-green);
     border: none;        
 }
@@ -246,8 +246,9 @@ nav ul.menu-active{
     padding: 0;
 }
 
+/* Lastest Event */
 .main-event{
-    grid-area: e;
+    grid-area: n;
 }
 
 .main-event img{
@@ -274,6 +275,7 @@ nav ul.menu-active{
     text-align: center;
 }
 
+/* weather report */
 .main-weather{
     grid-area: w;
     text-align: center;
@@ -307,8 +309,10 @@ nav ul.menu-active{
     color: white;
 }
 
+/* spotlight business */
+
 .main-spotlight{
-    grid-area: x;
+    grid-area: e;
 }
 
 .main-spotlight div{    
@@ -425,22 +429,22 @@ nav ul.menu-active{
 
 #directory-selector{
     width: 100%;
-    text-align: center;
+    text-align: right;
 }
 
 #directory-selector button{
     padding: 1rem;
     margin: .5rem;
     border-radius: 5px;
-    background-color: var(--darker-green);
+    background-color: var(--dark-green);
     border: 1px black solid;
 }
 
 #directory-selector button.active{
-    background-color: orangered;
+    background-color: var(--tan);
 }
 
-/* Cards view */
+/* Cards */
 
 .directory-cards{
     display: grid;
@@ -452,12 +456,12 @@ nav ul.menu-active{
     text-align: center;    
     border: 2px solid grey;    
     width: 300px;
-    background-color: var(--darker-green);
+    background-color: var(--light-green);
     padding: 1rem;
     margin: .5rem;
 }
 
-/* List View */
+/* List */
 
 .directory-list{    
     display: grid;
@@ -466,11 +470,11 @@ nav ul.menu-active{
 }
 
 .directory-main a{    
-    color: lightgrey;
+    color: grey;
 }
 
 .directory-main a:visited{    
-    color: lightgrey;
+    color: grey;
 }
 
 .directory-list section img{
@@ -486,14 +490,33 @@ nav ul.menu-active{
 }
 
 .directory-list section:nth-child(odd) {
-    background-color: var(--darker-green);
+    background-color: var(--light-green);
 }
 
 .directory-list section:nth-child(even) {
     background-color: var(--dark-green);
 }
 
-  /* Thankyou Styling */
+/* Join page */
+
+.join-wizard-main{
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: var(--tan);
+    border: 1px solid grey;
+    padding: 2rem;
+}
+
+.join-wizard-main input[type=submit], .join-wizard-main button{
+    max-width: 800px;    
+    background-color: blue;
+    color: white;
+    margin: 2rem 1rem 1rem 0rem;
+    padding: .5rem;
+    font-size: 1.5rem;
+}
+
+  /* Thankyou page */
 
 .thankyou{
     text-align: center;    
@@ -513,45 +536,4 @@ nav ul.menu-active{
 
 .left-justify{
     text-align: left;
-}
-
-/* Join Wizard */
-
-.join-wizard-main{
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #e9edc9;
-    border: 1px solid grey;
-    padding: 2rem;
-}
-
-.join-wizard-main input[type=submit], .join-wizard-main button{
-    max-width: 800px;    
-    background-color: blue;
-    color: white;
-    margin: 2rem 1rem 1rem 0rem;
-    padding: .5rem;
-    font-size: 1.5rem;
-}
-
-/* Admin page */
-
-.login{
-    margin: 0 auto;
-    max-width: 480px;
-    padding: 1rem;
-}
-
-.errorMessage{
-    font-size: 1.5rem;
-    color: maroon;        
-}
-
-.admin-main section form div{
-    text-align: center;
-}
-
-.displaydata{
-    display: none;
-    text-align: center;
 }
