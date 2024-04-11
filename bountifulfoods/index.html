@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bountiful Foods" />
+  
+  <title>Toronto CoC</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" href="./styles/base.css">
+  <link rel="stylesheet" href="./styles/medium.css">
+  <link rel="stylesheet" href="./styles/large.css">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script src="./config/config.js" defer></script>
+  <script src="./scripts/header-footer.js" defer></script>    
+  <script src="./scripts/main.js" defer></script>
 </head>
+
 <body>
-    
+  <div id="content">
+    <header>
+      <div class="header-top">
+        <div class="header-logo">
+          <a href="index.html"><img src="./images/toronto-logo.jpg" alt="Toronto Chamber of Commerce Logo"></a>
+        </div>
+        <div class="header-title">
+          <h1>Bountiful Foods</h1>
+          <!-- <h2>second head title</h2> -->
+        </div>
+        <div class="header-icons">
+          <a href="https://www.facebook.com" target="_blank"><img src="./images/facebook-40.png"
+              alt="facebook logo"></a>
+          <a href="https://www.instagram.com" target="_blank"><img src="./images/instagram-40.png"
+              alt="instagram logo"></a>    
+        </div>
+      </div>
+      <nav>
+        <button id="hamburger-menu">
+          <span id="hamburger-x"><img src="./images/hamburger-close.png" alt="hamburger menu image"></span>
+          <span id="hamburger-equiv"><img src="./images/hamburger.png" alt="hamburger menu image"></span>
+        </button>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="discovery.html">About Us</a></li>
+          <!-- <li><a href="directory.html">Directory</a></li> -->
+          <li><a href="join.html">Order Drink</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="home-main">
+      <section id="nopad" class="main-hero">
+        <h2>Welcome to Bountiful Foods!</h2>
+        <a href="join.html" class="a-button">Join Us</a>
+      </section>
+      <section class="main-event">
+        <h1>Events</h1>
+        <h3>Chinese New Year Fun fair</h3>
+        <p>Let's Celebrate Chinese New year with your Family in the Pacific Mall.</p>
+        <p>Date: February 14- March 1st</p>
+        <p>Time: 10am-10pm</p>
+        <p>Location: The Pacific Mall Parking Lot</p>
+        <p>
+          Contact Steven Lee for more information about getting involved at 208-496-0123.
+        </p>
+      </section>
+      <section class="main-weather">
+        <h1>Weather</h1>
+        <div>
+          <img id="weathericon" src="./images/sunny.png" alt="weather icon">
+          <h2><span id="temperature">100</span>&deg; F</h2>
+        </div>
+        <h2 id="weatherdesc">Sunny</h2>
+        <hr>
+        <h3>Wind Speed: <span id="windspeed">50</span> mph</h3>
+      </section>
+
+      <section class="main-spotlight">
+        <h1>Spotlighted Businesses</h1>
+        <div class="spotlight1">
+          <h4><a href="https://www.rom.on.ca/" target="_blank">Royal Ontario Museum</a></h4>
+          <p class="centered-image"><img src="./images/royal-ontario-museum.jpg"></p>
+          <p>100 Queens Park,Toronto, ON M5S 2C6, Canada</p>
+          <p>"To Explorer the World"</p>
+        </div>
+        <div class="spotlight2">
+          <h4><a href="http://www.centreisland.ca/" target="_blank">Centreville Amusement Park</a></h4>
+          <p class="centered-image"><img src="./images/Centreville-Amusement-Park.jpg"></p>
+          <p>9 Queens Quay W,Toronto, ON M5J 2H3, Canada</p>
+          <p>"Best Happy Family Day!"</p>
+        </div>
+        <div class="spotlight3">
+          <h4><a href="https://www.thehauntedmillinteton.com/" target="_blank">Pacfic Mall</a></h4>
+          <p class="centered-image"><img src="./images/pacific-mall-toronto.jpg"></p>
+          <p>Markham, ON L3R 0Y5, Canada</p>
+          <p>"Happy Chinese New Year"</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="./images/toronto-logo.jpg" alt="Toronto Chamber of Commerce Logo">
+        </div>
+        <div class="footer-contact">
+          <h3>Toronto Chamber of Commerce</h3>
+          <p>11 Queens Ave<br>Toronto, Canada</p>
+          <p><a href="mailto:notavalidaddress@nowhere.email">info@torontochamber.org</a></p>
+          <p>208-496-1234</p>
+          <div class="footer-today">
+            <p></p>
+            <p>(None of the content on this website is accurate and is for demo purposes only)</p>  
+          </div>
+        </div>
+        <div class="footer-map">
+          <p><a href="https://maps.app.goo.gl/C6Pvt4qb5tYGbEti9" target="_blank"><img src="./images/google-maps.png" alt="Google map icon"></a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
+
 </html>
