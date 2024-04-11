@@ -33,7 +33,7 @@
     .main-hero{
         grid-area: h;
         position: relative;      
-        background-image: url('../images/toronto-nightview.jpg');    
+        background-image: url('../images/vege.jpg');    
         background-position: center;
         height: 600px;        
     }

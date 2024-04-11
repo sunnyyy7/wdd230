@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Totonrot Chamber of Commerce" />
   
-  <title>Toronto CoC</title>
+  <title>Bountiful Foods</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="./styles/base.css">
   <link rel="stylesheet" href="./styles/medium.css">
@@ -136,4 +136,58 @@
   </div>
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Drink</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <script src="scripts/order.js" defer></script>
+</head>
+<body>
+    <div id="content">
+        <header>
+            <!-- Header content if needed -->
+        </header>
+        <main class="order-main">
+            <section>
+                <h3>Order Specialty Drink</h3>
+                <p>Please fill in the required information to order your specialty drink.</p>
+                <form id="order-form">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="fname" required>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Fruit Selection</legend>
+                        <label for="fruit1">Fruit 1</label>
+                        <select id="fruit1" name="fruit1"></select>
+                        <label for="fruit2">Fruit 2</label>
+                        <select id="fruit2" name="fruit2"></select>
+                        <label for="fruit3">Fruit 3</label>
+                        <select id="fruit3" name="fruit3"></select>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Special Instructions</legend>
+                        <textarea id="instructions" name="instructions"></textarea>
+                    </fieldset>
+                    <p>Payment is received when the drink is picked up.</p>
+                    <input type="submit" value="Place Order">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <!-- Footer content if needed -->
+        </footer>
+    </div>
+</body>
 </html>
