@@ -28,15 +28,30 @@ h1 {
   color: var(--primary-color);
 }
 
-label {
+/* label {
   color: var(--primary-color);
   font-size: 16px;
   margin-bottom: 5px;
+} */
+
+label {
+  color: var(--primary-color);
+  font-size: 16px;
+  margin-bottom: 10px; /* Increase or decrease this value to adjust spacing */
+  display: block;
 }
+
+/* input, textarea, select {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 0;
+  border-bottom: 1px solid var(--primary-color);
+  font-size: 1.1rem;
+} */
 
 input, textarea, select {
   padding: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 15px; /* Increase or decrease this value to adjust spacing */
   border: 0;
   border-bottom: 1px solid var(--primary-color);
   font-size: 1.1rem;
