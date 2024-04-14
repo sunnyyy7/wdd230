@@ -31,6 +31,55 @@ section {
     padding: 0;
 }
 
+/* Your existing CSS styles */
+#color-schema {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: var(--light-blue);
+    color: var(--tan);
+}
+
+.color-square {
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.light-blue {
+    background-color: var(--light-blue);
+}
+
+.cream {
+    background-color: var(--cream);
+}
+
+.tan {
+    background-color: var(--tan);
+}
+
+.brown {
+    background-color: var(--brown);
+}
+
+
+/* Define custom variables for easier reference */
+:root {
+    --primary-color: #247BA0;
+    --secondary-color: #70C1B3;
+    --dark-blue: #4472CA;
+    --light-blue: #CFDEE7;
+    --cream: #5E7CE2;
+    --tan: #92B4F4; 
+    --brown: #D0CFCF;
+}
+
+/* You can use these custom variables throughout your CSS */
+
+
 #wireframe .wireframe-images {
     display: flex;
     justify-content: space-between;
